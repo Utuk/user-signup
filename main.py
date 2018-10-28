@@ -42,7 +42,7 @@ def validate_form():
         if username == '':
             username_error = "That's not a valid username"
             username = ''
-    if ' ' in username == True:
+    if ' ' in username:
         username_error = "That's not a valid username"
         username = ''
 
@@ -50,7 +50,7 @@ def validate_form():
         password_error = "That's not a valid password"
         password = ''
     else:
-        if ' ' in password == True:
+        if ' ' in password:
             password_error = "That's not a valid password"
             password = ''
     if password == '':
