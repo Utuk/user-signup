@@ -12,11 +12,6 @@ app.config['DEBUG'] = True
 form = """
 """
 
-#@app.route("/")
-#def index():
-    #template = jinja_env.get_template('index.html')
-    #return template.render()
-
 @app.route('/signup')
 def display_form():
     template = jinja_env.get_template('index.html')
